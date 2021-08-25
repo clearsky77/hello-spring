@@ -10,7 +10,7 @@ public class HelloController {
     @GetMapping("aisatsu") //hello라고 들어오면 이 메서드를 호출
     public String hello(Model model){
         model.addAttribute("data","hello!!");
-        return "aisatsuPage"; //aisatsuPage.html로 연결한다.
+        return "aisatsuHtmlFile"; //resources에서 aisatsuHtmlFile.htmldmf 찾아서 반환한다.
 
     }
 }
