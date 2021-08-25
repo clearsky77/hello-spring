@@ -7,10 +7,10 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class HelloController {
 
-    @GetMapping("aisatsu") //hello라고 들어오면 이 메서드를 호출
+    @GetMapping("aisatsu") //aisatsu라고 들어오면 이 메서드를 호출
     public String hello(Model model){
         model.addAttribute("data","hello!!");
-        return "aisatsuHtmlFile"; //resources에서 aisatsuHtmlFile.htmldmf 찾아서 반환한다.
+        return "aisatsuHtmlFile"; //resources에서 aisatsuHtmlFile.html을 찾아서 반환한다.
 
     }
 }
